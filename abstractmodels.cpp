@@ -133,6 +133,10 @@ QString EngineListModel::addEngine(QFileInfo file)
     {
         return updateEngine("Doom Retro", file.absoluteFilePath(), Engine_Default, Pic_Retro, true);
     }
+    else if (file.baseName().compare( QString("uzdoom"), Qt::CaseInsensitive) == 0)
+    {
+        return updateEngine("UZDoom", file.absoluteFilePath(), Engine_ZDoom, Pic_UZdoom, true);
+    }
     else if (file.baseName().left(6).compare(QString("dosbox"), Qt::CaseInsensitive) == 0)
     {
         setupDosbox(file.absoluteFilePath());
