@@ -131,6 +131,7 @@ void RocketLauncher2::initPixmaps()
     enginepics->append((QPixmap(":/engine/img/ddlogo.png").scaled(105,105,Qt::KeepAspectRatio))); //13 DoomsDay
     enginepics->append((QPixmap(":/engine/img/LZDLogo.png").scaled(105,105,Qt::KeepAspectRatio))); //14 LZDoom
     enginepics->append((QPixmap(":/engine/img/UZDLogo.png").scaled(105,105,Qt::KeepAspectRatio))); //15 UZDoom
+    enginepics->append((QPixmap(":/engine/img/wooflogo.png").scaled(105,105,Qt::KeepAspectRatio))); //16 Woof
     ui->img_engine->setPixmap(enginepics->at(0));
 }
 
@@ -562,6 +563,8 @@ void RocketLauncher2::SetEnginePic(EnginePic pic)
         ui->img_engine->setPixmap(enginepics->at(14));
     else if (pic == Pic_UZdoom)
         ui->img_engine->setPixmap(enginepics->at(15));
+    else if (pic == Pic_Woof)
+        ui->img_engine->setPixmap(enginepics->at(16));
 }
 
 

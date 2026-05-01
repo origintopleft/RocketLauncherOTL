@@ -55,7 +55,8 @@ enum EnginePic
     Pic_Doomsday,
     Pic_Edge,
     Pic_LZdoom,
-    Pic_UZdoom
+    Pic_UZdoom,
+    Pic_Woof
 };
 
 struct EngineInfo

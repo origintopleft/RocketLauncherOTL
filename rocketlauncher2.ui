@@ -1147,6 +1147,11 @@ External File</string>
                <string>UZdoom</string>
               </property>
              </item>
+             <item>
+              <property name="text">
+               <string>Woof</string>
+              </property>
+             </item>
             </widget>
            </item>
            <item row="0" column="2">

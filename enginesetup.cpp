@@ -169,6 +169,8 @@ void RocketLauncher2::on_listbox_engines_clicked(const QModelIndex &index)
         ui->combo_EngPic->setCurrentText("LZdoom");
     else if (pic == Pic_UZdoom)
         ui->combo_EngPic->setCurrentText("UZdoom");
+    else if (pic == Pic_Woof)
+        ui->combo_EngPic->setCurrentText("Woof");
 }
 
 void RocketLauncher2::on_button_addCustEng_clicked()
@@ -271,6 +273,8 @@ void RocketLauncher2::on_combo_EngPic_currentTextChanged(const QString &arg1)
         enginelist->setPicFromIndex(Pic_LZdoom, index);
     else if (arg1 == "UZdoom")
         enginelist->setPicFromIndex(Pic_UZdoom, index);
+    else if (arg1 == "Woof")
+        enginelist->setPicFromIndex(Pic_Woof, index);
 
     SetEnginePic(enginelist->getCurrentEngine()->EngineImage);
 }
